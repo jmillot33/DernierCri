@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FluxController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [FluxController::class, 'index']);
+Route::get('/news/{id}', [FluxController::class, 'showSingle']);
+
+//route des appels pour React
+Route::post('/flux', [FluxController::class, 'flux']);
+Route::post('/flux/{id}', [FluxController::class, 'fluxSingle']);
