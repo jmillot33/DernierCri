@@ -37,7 +37,7 @@ Utilisation de React pour le front
 - Ajouter un message d'erreur au bout de X temps si l'on arrive pas à charger le flux donné
 
 
-##Rendu
+## Rendu
 
 ![Accueil](https://zupimages.net/up/21/39/oguj.png "Accueil")
 
